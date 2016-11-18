@@ -175,3 +175,6 @@ Original Blog Post: https://www.viget.com/articles/gulp-browserify-starter-faq
 </a>
 
 Visit [code.viget.com](http://code.viget.com) to see more projects from [Viget.](https://viget.com)
+### Static html, css, and js for c-m-c-a.com
+
+[c-m-c-a.com](http://www.c-m-c-a.com) is a website containing knowledge & resources for defending classical monotheistic Christianity?
