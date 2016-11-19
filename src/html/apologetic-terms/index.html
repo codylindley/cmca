@@ -7,29 +7,34 @@
     <meta name="description" content="Knowledge & resources for defending classical monotheistic Christianity">
 
 	<style>
-	dl.dic{
+    #terms{
+        position: relative;
+    }
+	dl.term{
 
     }
 
-    dl.dic dt h3{
+    dl.term dt h3{
         display:inline;
         margin-right:10px;
     }
 
-    dl.dic dt h4 {
+    dl.term dt h4 {
         display:inline;
     }
 
-    dl.dic dt h4 a{
+    dl.term dt h4 a{
         border-bottom: none;
     }
 
-    dl.dic dd{
+    dl.term dd{
         margin:0;
     }
 	</style>
 
 {% endblock %}
+
+{% block bodyid %}apologetic-terms{% endblock %}
 
 {% block content %}
 
@@ -38,18 +43,13 @@
 		<h1>Apologetic Terms</h1>
 	</header>
 
-    <dl class="dic">
+    <div id="terms">
 
-	<dt><h3>Monotheism</h3><h4><a href="#" class="fa fa-volume-up" aria-hidden="true"></a></h4></dt>
-	<dd>Belief in, and worship of one god</dd>
-    </dl>
-    <hr>
+    <div class="ui active inverted dimmer" style="margin-top:50px">
+        <div class="ui text loader"></div>
+    </div>
 
-    <dl class="dic">
-    <dt><h3>Anthropology</h3><h4><a href="#" class="fa fa-volume-up" aria-hidden="true"></a></h4></dt>
-	<dd>The study of mankind</dd>
-    </dl>
-    <hr>
+    </div>
 
 </section>
 

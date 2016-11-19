@@ -82,6 +82,7 @@
   "license": "MIT",
   "dependencies": {
     "jQuery": "2.2.4",
-    "jquery": "^2.2.4"
+    "jquery": "^2.2.4",
+    "lodash.sortby": "^4.7.0"
   }
 }

@@ -1,17 +1,19 @@
 /* I configured webpack to included jQuery and reference to skel in every module. */
 
+import terms from 'terms';
+import 'terms-logic'
 import 'util'
 import 'editorial'
 import 'tipuesearch'
+import 'semantic-dimmer'
 import 'semantic-transition'
 import 'semantic-popup'
 
 $(document).ready(function() {
 
     $('.verse').popup({
-        content:'test',
         on:'hover',
-        popup: '.verse.popup',
+        popup: '.versePopUp.popup',
         variation:'inverted tiny very wide',
         delay:{show:100,hide:0},
         hoverable : true,
@@ -37,6 +39,30 @@ $(document).ready(function() {
                     });
                     $this.empty().html(output);
                 }
+            });
+        },
+        onHide:function(elm){
+            this.empty().html(`<div class="ui active centered inline loader"></div>`);
+        }
+    });
+
+    $('.wordDef').popup({
+        on:'hover',
+        popup: '.wordDefPopUp.popup',
+        variation:'inverted tiny very wide',
+        delay:{show:100,hide:0},
+        hoverable : true,
+        onShow:function(elm){
+            var word = $(elm);
+            var wordTxt = $(elm).text();
+            var $this = this;
+            jQuery.ajax({
+                url:'https://wordsapiv1.p.mashape.com/words/'+wordTxt+'/definitions',
+                dataType: 'json',
+                beforeSend: function(xhr) {
+                    xhr.setRequestHeader("X-Mashape-Authorization", "jqukgyrprPmsh9gRsNjxhJ8NLOlWp1xI738jsn3lfVKoPs3P3H");
+                },
+                success: function(data) { $this.empty().html(data.definitions[0].definition); }
             });
         },
         onHide:function(elm){
