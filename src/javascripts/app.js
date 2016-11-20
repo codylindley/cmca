@@ -1,6 +1,7 @@
 /* I configured webpack to included jQuery and reference to skel in every module. */
 
 import terms from 'terms';
+import find from 'lodash.find';
 import 'terms-logic'
 import 'util'
 import 'editorial'
@@ -10,6 +11,29 @@ import 'semantic-transition'
 import 'semantic-popup'
 
 $(document).ready(function() {
+
+    $('.termDef').popup({
+        on:'hover',
+        popup: '.versePopUp.popup',
+        variation:'inverted tiny very wide',
+        delay:{show:100,hide:0},
+        hoverable : true,
+        onShow:function(elm){
+            var $term = $(elm);
+            var termTxt = $(elm).data('term') || $term.text();
+            var $this = this;
+            $this.empty().html(find(terms,{'term':termTxt.toLowerCase()}).def);
+            if(!$term[0].hasAttribute('href')){
+                $term.attr({
+                    'href':'https://en.wikipedia.org/wiki/'+termTxt,
+                    "target":'_blank'
+                });
+            }
+        },
+        onHide:function(elm){
+            this.empty().html(`<div class="ui active centered inline loader"></div>`);
+        }
+    });
     // e.g. <a href="https://www.bible.com/bible/100/act.3:4-8" class="verse">Acts 3:4-8</a>
     $('.verse').popup({
         on:'hover',
@@ -60,7 +84,7 @@ $(document).ready(function() {
         hoverable : true,
         onShow:function(elm){
             var $word = $(elm);
-            var wordTxt = $word.text();
+            var wordTxt = $(elm).data('word') || $word.text();
             var $this = this;
             jQuery.ajax({
                 url:'https://wordsapiv1.p.mashape.com/words/'+wordTxt+'/definitions',

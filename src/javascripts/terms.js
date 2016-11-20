@@ -4,6 +4,18 @@ const terms = [
         def: `The study of mankind`
     },
     {
+        term: `Jehovah’s Witness`,
+        def: `Jehovah's Witnesses is a millenarian restorationist Christian denomination with nontrinitarian beliefs distinct from mainstream Christianity.`
+    },
+    {
+        term: `objective`,
+        def: `(of a person or their judgment) not influenced by personal feelings or opinions in considering and representing facts.`
+    },
+    {
+        term: `subjective`,
+        def: `based on or influenced by personal feelings, tastes, or opinions.`
+    },
+    {
         term: `hedonism`,
         def: `the ethical theory that identifies the good with happiness and understands happiness as the presence of pleasure and the absence of pain`
     },
