@@ -11,8 +11,8 @@ http://www.tipue.com/search
 // List of pages for Live mode
 
 var tipuesearch_pages = ["/",
-                        "/what-is-classical-monotheistic-christian-apologetics/"
-                        ];
+                        "/what-is-classical-monotheistic-christian-apologetics"
+];
 
 
 /*

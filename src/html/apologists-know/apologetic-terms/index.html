@@ -2,21 +2,54 @@
 
 {% block head %}
 
-    <title>What is classical monotheistic Christian apologetics? Why defend it?</title>
+    <title>Apologetic Terms</title>
 
     <meta name="description" content="Knowledge & resources for defending classical monotheistic Christianity">
 
+	<style>
+    #terms{
+        position: relative;
+    }
+	dl.term{
+
+    }
+
+    dl.term dt h3{
+        display:inline;
+        margin-right:10px;
+    }
+
+    dl.term dt h4 {
+        display:inline;
+    }
+
+    dl.term dt h4 a{
+        border-bottom: none;
+    }
+
+    dl.term dd{
+        margin:0;
+    }
+	</style>
+
 {% endblock %}
 
-{% block bodyid %}what-is-c-m-c-a{% endblock %}
+{% block bodyid %}apologetic-terms{% endblock %}
 
 {% block content %}
 
 <section id="search">
-	<header>
-        <h1>What is Classical Monotheistic Christianity?</h1>
-        <p>Why defend (i.e. <a class="wordDef">apologia</a>) it?</p>
-    </header> 
+	<header class="main">
+		<h1>Apologetic Terms</h1>
+	</header>
+
+    <div id="terms">
+
+    <div class="ui active inverted dimmer" style="margin-top:50px">
+        <div class="ui text loader"></div>
+    </div>
+
+    </div>
 
 </section>
 

@@ -8,7 +8,7 @@ terms.map(function(obj){
 
 let termsSorted = sortBy(terms,['term']);
 
-if ($('#apologetic-terms')[0]) {
+if ($('#apologists-know')[0]) {
 
     let $terms =  $('#terms');
 

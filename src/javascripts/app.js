@@ -10,7 +10,7 @@ import 'semantic-transition'
 import 'semantic-popup'
 
 $(document).ready(function() {
-
+    // e.g. <a href="https://www.bible.com/bible/100/act.3:4-8" class="verse">Acts 3:4-8</a>
     $('.verse').popup({
         on:'hover',
         popup: '.versePopUp.popup',
@@ -18,8 +18,8 @@ $(document).ready(function() {
         delay:{show:100,hide:0},
         hoverable : true,
         onShow:function(elm){
-            var verse = $(elm);
-            var verseTxt = $(elm).text();
+            var $verse = $(elm);
+            var verseTxt = $verse.text();
             var $this = this;
             jQuery.ajax({
                 url:'http://getbible.net/json',
@@ -38,6 +38,12 @@ $(document).ready(function() {
                         output += '</div>';
                     });
                     $this.empty().html(output);
+                    if(!$verse[0].hasAttribute('href')){
+                        $verse.attr({
+                            'href':'https://www.bible.com/bible/100/'+verseTxt,
+                            "target":'_blank'
+                        });
+                    }
                 }
             });
         },
@@ -53,8 +59,8 @@ $(document).ready(function() {
         delay:{show:100,hide:0},
         hoverable : true,
         onShow:function(elm){
-            var word = $(elm);
-            var wordTxt = $(elm).text();
+            var $word = $(elm);
+            var wordTxt = $word.text();
             var $this = this;
             jQuery.ajax({
                 url:'https://wordsapiv1.p.mashape.com/words/'+wordTxt+'/definitions',
@@ -62,7 +68,15 @@ $(document).ready(function() {
                 beforeSend: function(xhr) {
                     xhr.setRequestHeader("X-Mashape-Authorization", "jqukgyrprPmsh9gRsNjxhJ8NLOlWp1xI738jsn3lfVKoPs3P3H");
                 },
-                success: function(data) { $this.empty().html(data.definitions[0].definition); }
+                success: function(data) { 
+                    $this.empty().html(data.definitions[0].definition);
+                    if(!$word[0].hasAttribute('href')){
+                        $word.attr({
+                            'href':'https://en.oxforddictionaries.com/definition/'+wordTxt,
+                            "target":'_blank'
+                        });
+                    }
+                }
             });
         },
         onHide:function(elm){
