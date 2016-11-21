@@ -14,7 +14,7 @@ $(document).ready(function() {
 
     $('.termDef').popup({
         on:'hover',
-        popup: '.versePopUp.popup',
+        popup: '.emptyPopUp.popup',
         variation:'inverted tiny very wide',
         delay:{show:100,hide:0},
         hoverable : true,
@@ -133,8 +133,28 @@ $(document).ready(function() {
     // show helping text when focusing search input
     $('#tipue_search_input')
         .popup({
-            on: 'hover',
+            on: 'focus',
             variation:'inverted tiny wide',
         });
+
+    // show helping text when focusing search input
+    $('sup').popup({
+        on:'click',
+        popup: '.emptyPopUp.popup',
+        variation:'inverted tiny very wide',
+        delay:{show:100,hide:0},
+        onShow:function(elm){
+            var $sup = $(elm);
+            var supTxt = $sup.text().split('');
+            supTxt.pop();
+            supTxt.shift();
+            var footNoteHtml = $('.footnotes li:nth-child('+supTxt+')').html();
+            var $this = this;
+            $this.empty().html(footNoteHtml);
+        },
+        onHide:function(elm){
+            this.empty().html(`<div class="ui active centered inline loader"></div>`);
+        }
+    });
 });
 

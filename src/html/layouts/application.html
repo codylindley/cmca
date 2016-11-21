@@ -22,7 +22,7 @@
     {% include "shared/app-icons.html" %}
 
   </head>
-  <body id="{% block bodyid %}test{% endblock %}">
+  <body id="{% block bodyid %}{% endblock %}" class="{% block bodyclass %}{% endblock %}">
 
   <!-- Wrapper -->
 	<div id="wrapper">
@@ -49,6 +49,8 @@
     <div class="ui popup wordDefPopUp">
       <div class="ui active centered inline loader"></div>
     </div>
+
+    <div class="ui popup emptyPopUp"></div>
 
     {% block javascript %}
       <script src="/javascripts/app.js"></script>
