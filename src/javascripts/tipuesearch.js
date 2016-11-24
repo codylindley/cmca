@@ -12,7 +12,7 @@ http://www.tipue.com/search
 
 var tipuesearch_pages = ["/",
                         "/what-is-classical-monotheistic-christian-apologetics",
-                        "/essential-mere-orthodox-christianity"
+                        "/apologists-know/essential-classical-christian-doctrines"
 ];
 
 

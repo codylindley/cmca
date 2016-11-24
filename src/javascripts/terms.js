@@ -130,7 +130,7 @@ and reassure believers`
     },
 
     {
-        term: `presupposition:`,
+        term: `presupposition`,
         def: `(1) A belief held prior to investigation. (2) An assumption or criterion 
 that precedes examination of a subject that conditions one's interpretation of that subject.
 Example: A Christian presupposes that miracles occur before he examines the historical 
@@ -139,7 +139,7 @@ before he examines the historical evidence for Christ's resurrection.`
     },
 
     {
-        term: `a posteriori:`,
+        term: `a posteriori`,
         def: `(1) knowledge gained from or after experience. (2) knowledge gained 
 through sensory impression. (3) proceeding by induction from effect to cause`
     },
@@ -152,13 +152,13 @@ a presupposition.`
     },
 
     {
-        term: `Natural Revelation:`,
+        term: `Natural Revelation`,
         def: `God's disclosure of Himself through non-supernatural means such 
 as creation, history, and the conscience of man.`
     },
 
     {
-        term: `Metanarrative:`,
+        term: `Metanarrative`,
         def: `(1) A story used to explain another story or stories. (2) A worldview 
 constructed as a narrative that answers ultimate questions. In current usage, a 
 metanarrative functions as an all-encompassing philosophy of history including the story 
@@ -166,13 +166,13 @@ of man's origin and his destiny`
     },
 
     {
-        term: `Epistemology:`,
+        term: `Epistemology`,
         def: `The branch of philosophy that inquires into the nature of knowledge, its 
 origin, foundation, and validity`
     },
 
     {
-        term: `Rationalism:`,
+        term: `Rationalism`,
         def: `(1) That form of knowledge acquisition which relies on intuition, deduction 
 and the laws for logic. (2) a priori knowledge`
     },
@@ -198,7 +198,7 @@ determining ultimate causes`
     },
 
     {
-        term: `Contingency:`,
+        term: `Contingency`,
         def: `In philosophical usage, an event that may or may not occur; an event 
 whose occurrence is dependent on factors outside itself.`
     },
@@ -211,7 +211,7 @@ some end. (3) The study of the evidence of design in nature.`
     },
 
     {
-        term: `Classical Apologetics:`,
+        term: `Classical Apologetics`,
         def: `An approach to apologetics that employs a two-step case for 
 Christianity beginning with arguments from natural revelation (cosmological, design, 
 ontological) to establish theism and secondarily employing arguments from historical 
@@ -230,7 +230,7 @@ apologists assert that God`
     },
 
     {
-        term: `Presppositionalism:`,
+        term: `Presppositionalism`,
         def: `An approach to apologetics that begins with the a priori claim that 
 all men intuitively know that God exists even before they are presented with evidence, 
 and due to the noetic effects of sin, there is insufficient common ground shared by 
@@ -249,13 +249,13 @@ evidential validation.`
     },
 
     {
-        term: `Singularity:`,
+        term: `Singularity`,
         def: `The (so-called) originating point of the Big Bang, when matter, space and 
 time were infinitely condensed into a single point.`
     },
 
     {
-        term: `Metaphysics:`,
+        term: `Metaphysics`,
         def: `The branch of philosophy that inquires into the nature of existence or 
 being. (2) The study of existing things with a view to categorizing all phenomena of 
 human experience. In philosophical literature, metaphysics divides into two branches, 
@@ -263,7 +263,7 @@ cosmology and ontology.`
     },
 
     {
-        term: `Naturalism:`,
+        term: `Naturalism`,
         def: `(1) The physical universe of matter and energy is all that exists; nature 
 creates and sustains itself. (2) A rejection of all supernaturalism. (3) Materialism, or the 
 doctrine that noting exists apart from material phenomena. (4) Atheism. The Naturalist 
@@ -272,19 +272,19 @@ Roman poet Lucretius.`
     },
 
     {
-        term: `Pantheism:`,
+        term: `Pantheism`,
         def: `The belief that god and the universe are identical. (2) The belief that god has 
 no personal attributes, but is identical with the material world`
     },
 
     {
-        term: `Positivism:`,
+        term: `Positivism`,
         def: `A twentieth-century school of thought that claimed only empirically verified 
 statements could be certifiably true`
     },
 
     {
-        term: `Falsifiability criterion:`,
+        term: `Falsifiability criterion`,
         def: `The central doctrine of philosopher of science Karl Popper 
 which states that true scientific hypotheses must be formulated in such a way that they 
 are vulnerable to being overturned by negative evidence.`
@@ -328,7 +328,7 @@ simultaneous existence of God and evil are logically compatible`
     },
 
     {
-        term: `Enlightenment:`,
+        term: `Enlightenment`,
         def: `A seventeenth and eighteenth century western ideology that emphasized 
 reason, nature, and progress. Enlightenment philosophers argued for the basic goodness
 of man, the authority of philosophy, the inevitable progress of science, and a deistic view 
@@ -336,7 +336,7 @@ of God.`
     },
 
     {
-        term: `Deism:`,
+        term: `Deism`,
         def: `A monotheistic anti-Trinitarian view of God that attributes to Him the attributes 
 associated with transcendence, but denies His immanent involvement in the world 
 through supernatural activity subsequent to the original act of creation`
@@ -369,35 +369,35 @@ certifiable propositional truths.`
     },
 
     {
-        term: `Animism:`,
+        term: `Animism`,
         def: `The belief that spirits possess both animate and inanimate objects— trees, 
 rocks, waters, humans and animals. These spirits can migrate between objects and can be
 manipulate through human instrumentality.`
     },
 
     {
-        term: `Polytheism:`,
+        term: `Polytheism`,
         def: `Belief in, and worship of more than one god`
     },
 
     {
-        term: `Henotheism:`,
+        term: `Henotheism`,
         def: `The exclusive worship of one god, while not rejecting the existence of 
 other gods.`
     },
 
     {
-        term: `Monotheism:`,
+        term: `Monotheism`,
         def: `Belief in, and worship of one god`
     },
 
     {
-        term: `Monism:`,
+        term: `Monism`,
         def: `The belief that one impersonal element constitutes all reality`
     },
 
     {
-        term: `Exclusivism:`,
+        term: `Exclusivism`,
         def: `A philosophical stance on religion that claims there is one true religion and 
 one valid path to God among numerous false alternatives.`
     },
@@ -410,7 +410,7 @@ is necessarily false.`
     },
 
     {
-        term: `Miracle:`,
+        term: `Miracle`,
         def: `An event or effect in the physical world that defies all human or natural agency 
 and whose cause must be supernatural in origin.`
     },
@@ -421,7 +421,7 @@ and whose cause must be supernatural in origin.`
     },
 
     {
-        term: `Demythologization:`,
+        term: `Demythologization`,
         def: `A campaign inaugurated by Rudolf Bultmann and other critics to 
 strip the Bible of its mythical or supernatural elements, thus discovering the "kernel within
 the husk" of truth that could still be believed.`

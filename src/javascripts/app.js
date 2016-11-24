@@ -40,16 +40,15 @@ $(document).ready(function() {
         popup: '.versePopUp.popup',
         variation:'inverted tiny very wide',
         delay:{show:100,hide:0},
-        hoverable : true,
         onShow:function(elm){
             var $verse = $(elm);
             var verseTxt = $verse.text();
+            verseTxt = Array.from(verseTxt).indexOf(' ') === 1 ? verseTxt.replace(' ','') : verseTxt;
             var $this = this;
             jQuery.ajax({
                 url:'http://getbible.net/json',
                 dataType: 'jsonp',
                 data: 'p='+verseTxt+'&v=nasb',
-                jsonp: 'getbible',
                 success:function(json){
                     var output = '';
                     jQuery.each(json.book, function(index, value) {
@@ -80,7 +79,7 @@ $(document).ready(function() {
         on:'hover',
         popup: '.wordDefPopUp.popup',
         variation:'inverted tiny very wide',
-        delay:{show:100,hide:0},
+        delay:{show:200,hide:0},
         hoverable : true,
         onShow:function(elm){
             var $word = $(elm);
