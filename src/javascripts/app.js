@@ -12,34 +12,43 @@ import 'semantic-popup'
 
 $(document).ready(function() {
 
+    $('.footnotes, .references').find('a').not('[data-linkhere]').each(function(){
+        $(this).attr('target','_blank');
+    }); 
+
     $('.termDef').popup({
         on:'hover',
         popup: '.emptyPopUp.popup',
         variation:'inverted tiny very wide',
-        delay:{show:100,hide:0},
+        delay:{show:200,hide:0},
+        addTouchEvents:false,
         hoverable : true,
         onShow:function(elm){
             var $term = $(elm);
-            var termTxt = $(elm).data('term') || $term.text();
+            var termTxt = $term.data('term') || $term.text();
             var $this = this;
             $this.empty().html(find(terms,{'term':termTxt.toLowerCase()}).def);
-            if(!$term[0].hasAttribute('href')){
-                $term.attr({
-                    'href':'https://en.wikipedia.org/wiki/'+termTxt,
-                    "target":'_blank'
-                });
-            }
         },
         onHide:function(elm){
             this.empty().html(`<div class="ui active centered inline loader"></div>`);
         }
+    }).not('[href]').each(function(){
+        var $this = $(this);
+        var term = $this.data('term') || $this.text();
+        $this.attr({
+            'href':'https://en.wikipedia.org/wiki/'+term,
+            "target":'_blank'
+        });
     });
     // e.g. <a href="https://www.bible.com/bible/100/act.3:4-8" class="verse">Acts 3:4-8</a>
-    $('.verse').popup({
+
+    $('.verse').not('[data-nopopup]').popup({
         on:'hover',
         popup: '.versePopUp.popup',
         variation:'inverted tiny very wide',
-        delay:{show:100,hide:0},
+        delay:{show:200,hide:0},
+        addTouchEvents:false,
+        lastResort:true,
         onShow:function(elm){
             var $verse = $(elm);
             var verseTxt = $verse.text();
@@ -51,28 +60,38 @@ $(document).ready(function() {
                 data: 'p='+verseTxt+'&v=nasb',
                 success:function(json){
                     var output = '';
-                    jQuery.each(json.book, function(index, value) {
-                        output += '<div>';
-                        jQuery.each(value.chapter, function(index, value) {
-                            output += '  <sup>' +value.verse_nr+ '</sup>  ';
+                    if (json.type == 'verse'){
+                            jQuery.each(json.book, function(index, value) {
+                                output += '<div>';
+                                jQuery.each(value.chapter, function(index, value) {
+                                    output += '  <small class="ltr">' +value.verse_nr+ '</small>  ';
+                                    output += value.verse;
+                                    output += '<br/>';
+                                });
+                                output += '</div>';
+                            });
+                    } else if (json.type == 'chapter'){
+                        var output = '<div>';
+                        jQuery.each(json.chapter, function(index, value) {
+                            output += '  <small class="ltr">' +value.verse_nr+ '</small>  ';
                             output += value.verse;
                             output += '<br/>';
                         });
                         output += '</div>';
-                    });
-                    $this.empty().html(output);
-                    if(!$verse[0].hasAttribute('href')){
-                        $verse.attr({
-                            'href':'https://www.bible.com/bible/100/'+verseTxt,
-                            "target":'_blank'
-                        });
                     }
+                    $this.empty().html(output);
                 }
             });
         },
         onHide:function(elm){
             this.empty().html(`<div class="ui active centered inline loader"></div>`);
         }
+    }).end().not('[href]').each(function(){
+        var $this = $(this);
+        $this.attr({
+            'href':'https://www.biblegateway.com/passage/?search='+$this.text()+'&version=nasb',
+            "target":'_blank'
+        });
     });
 
     $('.wordDef').popup({
@@ -80,10 +99,10 @@ $(document).ready(function() {
         popup: '.wordDefPopUp.popup',
         variation:'inverted tiny very wide',
         delay:{show:200,hide:0},
-        hoverable : true,
+        addTouchEvents:false,
         onShow:function(elm){
             var $word = $(elm);
-            var wordTxt = $(elm).data('word') || $word.text();
+            var wordTxt = $word.data('word') || $word.text();
             var $this = this;
             jQuery.ajax({
                 url:'https://wordsapiv1.p.mashape.com/words/'+wordTxt+'/definitions',
@@ -92,20 +111,20 @@ $(document).ready(function() {
                     xhr.setRequestHeader("X-Mashape-Authorization", "jqukgyrprPmsh9gRsNjxhJ8NLOlWp1xI738jsn3lfVKoPs3P3H");
                 },
                 success: function(data) { 
-                    $this.empty().html(data.definitions[0].definition);
-                    if(!$word[0].hasAttribute('href')){
-                        $word.attr({
-                            'href':'https://en.oxforddictionaries.com/definition/'+wordTxt,
-                            "target":'_blank'
-                        });
-                    }
+                    $this.empty().html(data.definitions[$word.data('index')||0].definition);
                 }
             });
         },
         onHide:function(elm){
             this.empty().html(`<div class="ui active centered inline loader"></div>`);
         }
-    });
+    }).not('[href]').each(function(){
+        var $this = $(this);
+        $this.attr({
+            'href':'https://en.oxforddictionaries.com/definition/'+$this.text(),
+            "target":'_blank'
+        });
+    });;
 
     // start search code
     $('#tipue_search_input').tipuesearch({});
