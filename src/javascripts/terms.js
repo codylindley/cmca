@@ -4,6 +4,14 @@ const terms = [
         def: `The study of mankind`
     },
     {
+        term: `extrabiblical`,
+        def: `Outside of the Bible`
+    },
+    {
+        term: `evidential apologetics`,
+        def: `Evidential Apologetics is that style of Christian defense that stresses the miracles found in the Bible particularly Christ's resurrection as an evidence for the existence of God and the validity of Christ and His words.  It also uses historical evidences to support the veracity of the biblical account(s).  In this, it is very similar to Classical Apologetics, which stresses reason in its approach to evidences.  Basically, evidential apologetics stresses evidence such as miracles, fulfilled prophecies, etc., and uses reason to support them.`
+    },
+    {
         term: `Jehovah’s Witness`,
         def: `Jehovah's Witnesses is a millenarian restorationist Christian denomination with nontrinitarian beliefs distinct from mainstream Christianity.`
     },

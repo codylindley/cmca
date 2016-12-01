@@ -12,7 +12,7 @@ import 'semantic-popup'
 
 $(document).ready(function() {
 
-    $('.footnotes, .references').find('a').not('[data-linkhere]').each(function(){
+    $('.footnotes, .references, .card').find('a').not('[data-linkhere]').each(function(){
         $(this).attr('target','_blank');
     }); 
 
