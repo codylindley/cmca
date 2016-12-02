@@ -8,6 +8,10 @@ const terms = [
         def: `Outside of the Bible`
     },
     {
+        term: `beyond the pale`,
+        def: `From pale ‎(“jurisdiction of an authority, territory under an authority's jurisdiction”), suggesting that anything outside the authority's jurisdiction was uncivilized. The phrase was in use by the mid-17th century, and may be a reference to the general sense of boundary, but is often understood to refer specifically to the English Pale in Ireland.`
+    },
+    {
         term: `evidential apologetics`,
         def: `Evidential Apologetics is that style of Christian defense that stresses the miracles found in the Bible particularly Christ's resurrection as an evidence for the existence of God and the validity of Christ and His words.  It also uses historical evidences to support the veracity of the biblical account(s).  In this, it is very similar to Classical Apologetics, which stresses reason in its approach to evidences.  Basically, evidential apologetics stresses evidence such as miracles, fulfilled prophecies, etc., and uses reason to support them.`
     },
