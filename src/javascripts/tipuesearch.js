@@ -15,7 +15,9 @@ var tipuesearch_pages = ["/",
                         "/apologists-know/essential-classical-christian-doctrines",
                         "/top-apologist-to-read-follow/",
                         "/apologetic-resources/certificate-programs/",
-                        "/apologetic-resources/courses/"
+                        "/apologetic-resources/courses/",
+                        "/apologetic-resources/applications/",
+                        "/apologetic-resources/podcasts/"
 ];
 
 

@@ -51,7 +51,7 @@ $(document).ready(function() {
         lastResort:true,
         onShow:function(elm){
             var $verse = $(elm);
-            var verseTxt = $verse.text();
+            var verseTxt = $verse.data('verse') || $verse.text();
             verseTxt = Array.from(verseTxt).indexOf(' ') === 1 ? verseTxt.replace(' ','') : verseTxt;
             var $this = this;
             jQuery.ajax({

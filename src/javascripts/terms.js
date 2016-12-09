@@ -4,6 +4,14 @@ const terms = [
         def: `The study of mankind`
     },
     {
+        term: `sola scriptura`,
+        def: `(Latin: by Scripture alone) is a Christian theological doctrine which holds that the Christian Scriptures are the sole infallible rule of faith and practice.`
+    },
+    {
+        term: `sola fide`,
+        def: `(Latin: by faith alone), also known as justification by faith alone, is a Christian theological doctrine that distinguishes most Protestant denominations from the Catholic Church, the Eastern Orthodox Church, and some parts of the Restoration Movement.`
+    },
+    {
         term: `extrabiblical`,
         def: `Outside of the Bible`
     },
