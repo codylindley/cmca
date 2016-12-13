@@ -17,7 +17,8 @@ var tipuesearch_pages = ["/",
                         "/apologetic-resources/certificate-programs/",
                         "/apologetic-resources/courses/",
                         "/apologetic-resources/applications/",
-                        "/apologetic-resources/podcasts/"
+                        "/apologetic-resources/podcasts/",
+                        "/apologetic-resources/websites/"
 ];
 
 
