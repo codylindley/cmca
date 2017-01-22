@@ -13,6 +13,7 @@ http://www.tipue.com/search
 var tipuesearch_pages = ["/",
                         "/what-is-classical-monotheistic-christian-apologetics",
                         "/apologists-know/essential-classical-christian-doctrines",
+                        "/who-cares",
                         "/top-apologist-to-read-follow/",
                         "/apologetic-resources/certificate-programs/",
                         "/apologetic-resources/courses/",

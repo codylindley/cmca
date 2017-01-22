@@ -2687,6 +2687,7 @@ button
 
 #homepage #homepageActive, 
 #what-is-c-m-c-a #what-is-c-m-c-aActive,
+#who-cares #who-caresActive,
 #top-apologist-to-read-follow #top-apologist-to-read-followActive
  position: relative
  background-color: #fff
@@ -2726,4 +2727,25 @@ button
 
 .footnotes, .references
   font-size: 0.75em
+
+blockquote 
+  margin: 1.5em 10px
+  padding: 0.5em 30px
+  quotes: "\201C""\201D""\2018""\2019"
+  color: #666
+  font-weight: bold
+
+blockquote:before 
+  color: #ccc
+  content: open-quote
+  font-size: 4em
+  line-height: 0.1em
+  margin-right: 0.25em
+  vertical-align: -0.4em
+
+blockquote cite 
+  display: block
+  font-weight: normal
+  margin-top: 20px
+  color: rgb(91, 91, 91)
 
