@@ -60,10 +60,7 @@ const terms = [
         term: `Jehovah’s Witness`,
         def: `Jehovah's Witnesses is a millenarian restorationist Christian denomination with nontrinitarian beliefs distinct from mainstream Christianity.`
     },
-    {
-        term: `objective`,
-        def: `(of a person or their judgment) not influenced by personal feelings or opinions in considering and representing facts.`
-    },
+
     {
         term: `subjective`,
         def: `based on or influenced by personal feelings, tastes, or opinions.`
@@ -435,13 +432,6 @@ certifiable propositional truths.
     {
         term: `Structuralism`,
         def: `An interdisciplinary movement with its origins in linguistics and French philosophy that emphasizes the way in which the meanings of symbols are determined by their relationships to other symbols in a system. Structuralists see language and other human activities (including religious rituals) as reflecting deep, universal structures often expressed in myth. See also postmodernism; sign.`
-    },
-
-    {
-        term: `Animism`,
-        def: `The belief that spirits possess both animate and inanimate objects— trees, 
-rocks, waters, humans and animals. These spirits can migrate between objects and can be
-manipulate through human instrumentality.`
     },
 
     {
