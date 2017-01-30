@@ -3,6 +3,39 @@ const terms = [
         term: `anthropology`,
         def: `The study of mankind`
     },
+
+    {
+        term: `relativism`,
+        def: `The denial of any absolute or objective standards, especially in ethics. (See objectivity.) Ethical relativists can be individual relativists, who hold that what is morally right is relative to the beliefs or emotions of the individual, or they can be cultural relativists, who hold that what is morally right varies with different societies. (See subjectivism.) Analogously, in epistemology relativism holds that what is true is dependent on the individual or the culture.`
+    },
+
+    {
+        term: `philosophy`,
+        def: `According to William James, philosophy is simply an unusually obstinate effort to think clearly and deeply about fundamental questions. Interestingly, what counts as philosophy is itself under dispute in philosophy. Philosophy can be identified historically in the West as the kind of activity carried on by such people as Plato, Aristotle, David Hume and Immanuel Kant. It can also be identified with reference to its fundamental questions, such as “What is knowledge?” (epistemology), “What is reality?” (metaphysics) and “What is good?” (ethics). Although some would make a sharp distinction between philosophy and theology, there is substantial overlap in the questions each treats. One way to distinguish between the two is in terms of their audiences: A thinker who is speaking to a religious community and can presuppose the authorities recognized by that community is doing theology. The same thinker addressing a broader community may be doing philosophy.`
+    },
+    
+
+    {
+        term: `truth`,
+        def: `Most philosophers have conceived of truth solely as a property of propositions. The most common account of propositional truth is the correspondence theory, which holds that a proposition is true if and only if it corresponds to the way things are. Rival accounts include the coherence theory, which views truth as the property of a proposition that is part of the most coherent system of propositions, and the pragmatic theory, which defines true propositions in terms of their usefulness in making predictions and dealing with reality. Ordinary language and the Bible use the term truth more broadly. Thus we speak of true friendship and truth in a relationship. It is in this sense that Jesus claims, in the Gospels, that his own life is the truth (a claim that Søren Kierkegaard attempted to illuminate through his famous statement that truth is “subjectivity” or “inwardness”— that inner passion that directs a person’s life toward that which is genuine). See also coherentism; pragmatism; subjectivism.`
+    },
+
+    {
+        term: `knowledge`,
+        def: `True belief that is warranted or justified. A person cannot know what is false, but a mere true belief that is the result of luck or guessing does not appear to constitute knowledge either. Most philosophers therefore agree that knowledge requires a true belief that is justified or warranted or that has been acquired through a reliable process, though there is great disagreement as to what it is that warrants or justifies a belief.`
+    },
+
+
+    {
+        term: `objectivity`,
+        def: `The quality of a fair-minded inquirer concerned about truth. The nature of this quality is, however, controversial. One ideal of objectivity is that of the completely neutral, detached, emotionless, presuppositionless thinker, who occupies what Thomas Nagel has called “the view from nowhere” or sees the world as Baruch Spinoza described it, from a godlike viewpoint, “under the aspect of eternity.” Objectivity in this sense is widely attacked by postmodern thinkers as an impossible and even undesirable ideal. However, objectivity in this sense should be distinguished from the honesty of the person who really cares about truth and is willing to respect contrary evidence. This kind of objectivity seems compatible with recognizing our human finitude and the ways in which our passions and assumptions can function as aids in the search for truth, rather than simply being distorting filters. See also relativism; subjectivism.`
+    },
+
+        {
+        term: `objective`,
+        def: `(of a person or their judgment) not influenced by personal feelings or opinions in considering and representing facts.`
+    },
+
     {
         term: `sola scriptura`,
         def: `(Latin: by Scripture alone) is a Christian theological doctrine which holds that the Christian Scriptures are the sole infallible rule of faith and practice.`
@@ -37,7 +70,17 @@ const terms = [
     },
     {
         term: `hedonism`,
-        def: `the ethical theory that identifies the good with happiness and understands happiness as the presence of pleasure and the absence of pain`
+        def: `The ethical theory that identifies the good with happiness and understands happiness as the presence of pleasure and the absence of pain. Critics of hedonism argue that the hedonist confuses what is a byproduct and concomitant of the good with the good itself; we do not seek pleasure primarily, but we seek good things (love and friendship, for example) that give us pleasure. If we did not value those things intrinsically, they would not in fact give us pleasure at all. See also egoism.`
+    },
+
+    {
+        term: `egoism`,
+        def: `The theory that humans do or should seek only their own individual happiness. Psychological egoism holds that as a matter of fact people seek always and only their own good. Moral egoism holds that it is right or good that humans should act in this way. Ayn Rand’s novels provide a dramatic illustration and defense of egoism. Traditional Christian teaching, in contrast, has condemned universal egoism as a form of sinful selfishness, to be distinguished from a proper regard for one’s self and its needs. See also hedonism.`
+    },
+
+        {
+        term: `narcissists`,
+        def: `a person who has an excessive interest in or admiration of themselves.`
     },
 
     {
@@ -77,12 +120,12 @@ const terms = [
 
     {
         term: `modernism`,
-        def: `a movement to modify Christianity to make it relevant and acceptable to modern peoples, emphasizing both science and social and political teachings. because of the goal of being relevant the miraculous was discredited and suppressed in Christianity. issues such an inerrancy, miracles of Jesus, and a creator of all things were highly challenged`
+        def: `A movement to modify Christianity to make it relevant and acceptable to modern peoples, emphasizing both science and social and political teachings. Modernism is closely linked with theological liberalism, but while liberalism is more exclusively tied to Protestantism, modernism enjoyed favor among Catholic intellectuals at the end of the nineteenth century and beginning of the twentieth.`
     },
 
     {
         term: `Liberalism`,
-        def: `movement in Protestant theology since the nineteenth century that is dominated by the goal of modifying Christianity so as to make it consistent with modern culture and science`
+        def: `Movement in Protestant theology since the nineteenth century that is dominated by the goal of modifying Christianity so as to make it consistent with modern culture and science. Liberalism rejects the traditional view of Scripture as an authoritative propositional revelation from God in favor of a view that sees revelation as a record of the evolving religious experiences of humankind. It sees Jesus more as ethical teacher and model rather than as divine atoner and redeemer.`
     },
 
     {
@@ -349,10 +392,7 @@ simultaneous existence of God and evil are logically compatible`
 
     {
         term: `Enlightenment`,
-        def: `A seventeenth and eighteenth century western ideology that emphasized 
-reason, nature, and progress. Enlightenment philosophers argued for the basic goodness
-of man, the authority of philosophy, the inevitable progress of science, and a deistic view 
-of God.`
+        def: `Eighteenth-century intellectual movement that emphasized the autonomy of human reason and questioned the role of traditional authorities. Immanuel Kant and David Hume were among the most important thinkers of the Enlightenment, though it included such individuals as Thomas Jefferson as well. Kant’s motto “Dare to use your own reason” expresses the attitude of the Enlightenment well. Kant and Hume both developed influential critiques of the rational grounds of religious belief, though Kant himself thought that in denying religious knowledge he was making room for rational religious faith.`
     },
 
     {
@@ -384,8 +424,17 @@ creator.`
     {
         term: `Postmodernism`,
         def: `(1) a rejection of worldviews (or metanarratives) and an endorsement 
-of a plurality of religious, cultural, historical, and ethical perspectives. (2) a rejection of 
-certifiable propositional truths.`
+of a plurality of religious, cultural, historical, and ethical perspectives. 
+
+(2) a rejection of 
+certifiable propositional truths. 
+
+(3) Term used to designate a loosely connected set of trends and perspectives in various cultural and academic fields that have in common only a perceived opposition to modernity. In philosophy, postmodernism is characterized by a suspicion of “metanarratives,” an emphasis on the uncertain character of human knowing and a tendency to analyze various intellectual claims, including Enlightenment claims about the universal character of reason and science, in a suspicious way as a mask for oppression and domination. The term postmodernism is often used syononymously with poststructuralism to indicate the ways in which postmodernist thinkers both reacted against and were influenced by structuralism.`
+    },
+
+    {
+        term: `Structuralism`,
+        def: `An interdisciplinary movement with its origins in linguistics and French philosophy that emphasizes the way in which the meanings of symbols are determined by their relationships to other symbols in a system. Structuralists see language and other human activities (including religious rituals) as reflecting deep, universal structures often expressed in myth. See also postmodernism; sign.`
     },
 
     {
@@ -445,10 +494,17 @@ and whose cause must be supernatural in origin.`
         def: `A campaign inaugurated by Rudolf Bultmann and other critics to 
 strip the Bible of its mythical or supernatural elements, thus discovering the "kernel within
 the husk" of truth that could still be believed.`
-    }, {
+    }, 
+    
+    {
         term: `burden of proof`,
         def: `legal term that indicates which party in a controversy has the responsibility of offering support for its position`
     },
+
+    {
+        term: `David Hume`,
+        def: `Scottish philosopher who was one of the preeminent thinkers of the Enlightenment. Hume was an empiricist who claimed that all knowledge of “matters of fact” (any knowledge not grounded in the meanings of terms) is based on sense experience. (See empiricism.) Hume developed powerful arguments that our knowledge of cause and effect and reliance on inductive reasoning are not in themselves rationally justifiable but are based on “custom.” In philosophy of religion, Hume is famous, first, for his argument that belief in miracles is irrational because the evidence of past experience will always outweigh the testimony in favor of miracles, and second, for a powerful critique of natural theology in his Dialogues Concerning Natural Religion.`
+    }
 
 ];
 
