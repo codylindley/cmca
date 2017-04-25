@@ -55,10 +55,11 @@ $(document).ready(function() {
             verseTxt = Array.from(verseTxt).indexOf(' ') === 1 ? verseTxt.replace(' ','') : verseTxt;
             var $this = this;
             jQuery.ajax({
-                url:'http://getbible.net/json',
+                url:'https://getbible.net/json',
                 dataType: 'jsonp',
-                data: 'p='+verseTxt+'&v=nasb',
+                data: 'p='+verseTxt+'&v=akjv',
                 success:function(json){
+                    console.log(json);
                     var output = '';
                     if (json.type == 'verse'){
                             jQuery.each(json.book, function(index, value) {
